@@ -5,197 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <style>
-      /* start of head design */
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
-      header {
-        height: 85px;
-        width: 100;
-        padding: 10px 30px 10px 30px;
-        background-color: rgb(21, 21, 170);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
-        pointer-events: none;
 
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      }
-      header .h_topdiv1 {
-        border: none;
-        display: flex;
-        text-decoration: none;
-      }
-      header .h_topdiv1 img {
-        height: 90px;
-      }
-      header .h_topdiv1 p {
-        font-size: 1.4em;
-        padding: 34px 10px 20px 25px;
-        color: #fff;
-      }
-      header .h_topdiv2 {
-        width: 300px;
-        border: none;
-        display: flex;
-      }
-      header .h_topdiv2 img {
-        width: 30px;
-        margin-left: 10px;
-      }
-      header .h_topdiv2 #top_p {
-        font-size: 0.7em;
-        color: rgb(202, 9, 9);
-        margin-top: 38px;
-        margin-right: 20px;
-        margin-left: -5px;
-      }
-      header .h_topdiv3 {
-        margin: 15px 20px 0px 10px;
-        color: #fff;
-      }
-      .nav_bar {
-        width: 93%;
-        height: 100px;
-        border: none;
-        display: flex;
-        flex-direction: row;
-        background-color: #fff;
-        padding: 10px;
-      }
-      .nav_bar .logo {
-        display: flex;
-        width: 350px;
-        position: relative;
-        pointer-events: all;
-      }
-      .nav_bar .logo figcaption {
-        width: 130px;
-        font-family: sans-serif;
-        font-size: 0.9em;
-        border: none;
-        margin: 20px 15px 10px 10px;
-        color: rgb(71, 173, 207);
-        cursor: pointer;
-      }
-      .nav_bar .logo figcaption span {
-        font-size: 1.8em;
-        color: rgb(71, 173, 207);
-      }
-      .nav_sec {
-        border: 1px solid;
-        height: 70px;
-        width: 880px;
-        margin-left: -40px;
-        padding: 35px 30px 0px 40px;
-        visibility: inherit;
-        display: flex;
-        flex-direction: row;
-        font-size: 1em;
-        border: none;
-        text-decoration: none;
-        list-style-type: none;
-        justify-content: space-between;
-      }
-      .nav_sec li:hover {
-        background: transparent;
-        color: rgb(71, 173, 207);
-        transition: 0.5s;
-      }
-      .nav_sec li {
-        height: 30px;
-        border: none;
-        cursor: pointer;
-      }
-      #prof {
-        color: rgb(71, 173, 207);
-      }
-      main{
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        border: none;
-        overflow: none;
-        text-decoration: none;
-        
-      }
-      .pro_div {
-        height: 60px;
-        width: 93%;
-        border: 1px solid;
-        background-color: rgb(65, 44, 116);
-        color: white;
-        padding: 25px 40px 0px 50px;
-      }
-      /* End of head design design */
-
-      .form_div{
-        width: 99.8%;
-        height: 35vh;
-        margin-top: 30px;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        border: none;
-        z-index: 1;
-      }
-      .form_div form{
-        width: 400px ;
-        height: 130px;
-        margin-left: 66vh;
-        margin-bottom: 20px;
-        border:none ;
-        text-align: left;
-        font-size: 1.1em;
-        font-style:normal;
-      }
-
-      .form_div form .bac_div{
-        visibility: none;
-        border:none ;
-        width: 300px;
-        height: 35px ;
-        margin-bottom:15px ;
-      }
-      .form_div form input{
-        width: 390px;
-        height: 35px ;
-        margin-top:3px ;
-        padding-left: 20px;
-        padding-right: 20px;
-        border: none;
-        outline: none;
-        border-radius: 2px;
-        background-color: rgb(233, 230, 230);
-      }
-
-      .btn_div button{
-        width: 120px;
-        height: 38px ;
-        margin: 7px;
-        font-size: 0.80em;
-        border-radius: 5px;
-        box-shadow: none;
-        outline: none;
-        border-color: rgb(230, 239, 241);
-        
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      }
-      .btn_div button:hover{
-        color: rgb(79, 190, 228);
-        transition: 0.5s;
-        border-bottom: none;
-        border-right:none ;
-      }
-      #btn_log{
-        background-color: #fff;
-
-      }
-
-    </style>
   </head>
   <body>
     <header>
@@ -232,7 +42,7 @@
       <div class="pro_div">
         <h1>PROFESSIONALS</h1>
       </div>
-      <div class="form_div">
+      <div class="form_div" id="log_in">
         <form method="post">
           <label for="li_nu"
             >LICENSE NUMBER
@@ -252,9 +62,124 @@
 
       <div class="btn_div">
         <button type="submit" id="btn_log">LOGIN</button>
-        <button id="btn_sign">SIGN UP</button>
+        <button id="btn_sign_" onclick="toggle1()">SIGN UP</button>
       </div>
      </div>
+
+
+     <div class="form_div2" id="sign_up">
+      <form method="post">
+        <div class="col">
+          <label form="fi_na">
+            FIRST NAME
+            <div form="fi_na" class="bac_div">
+              <input name="fi_na" id="inp" type="text" required />
+            </div>
+          </label>
+
+          <label for="email"
+            >EMAIL
+            <div for="email" class="bac_div">
+              <input name="email" type="email" required />
+            </div>
+          </label>
+
+          <label for="spec"
+            >SPECIALITY
+            <div for="spec" class="bac_div">
+              <input name="spec" type="text" required />
+            </div>
+          </label>
+
+          <label for="li_nu"
+            >LICENSE NUMBER
+            <div for="li_nu" class="bac_div">
+              <input name="li_nu" type="number" required />
+            </div>
+          </label>
+        </div>
+
+        <div class="col">
+          <label for="ot_na"
+            >OTHER NAMES
+            <div for="ot_na" class="bac_div">
+              <input name="ot_na" type="text" required />
+            </div>
+          </label>
+
+          <label for="pass"
+            >PASSWORD
+            <div for="pass" class="bac_div">
+              <input name="pass" type="password" required />
+            </div>
+          </label>
+
+          <label for="hosp"
+            >HOSPITAL
+            <div for="hosp" class="bac_div">
+              <input name="hosp" type="text" required />
+            </div>
+          </label>
+
+          <section id="sec">
+            <label for="title"
+              >TITLE
+              <div for="title" class="lit_div">
+                <input name="title" type="text" id="lit_" placeholder="Mr/Mrs" />
+              </div>
+            </label>
+            <label for="male" class="lit_div" id="lit_div"
+              ><p>MALE</p>
+              
+                <input value="male" name="gen" type="radio" id="lit" required />
+             
+            </label>
+            <label for="female" class="lit_div" id="lit_div"
+              ><p>FEMALE</p>
+              
+                <input value="female" name="gen" type="radio" id="lit" required />
+              
+            </label>
+          </section>
+        </div>
+      </form>
+
+      <div class="btn_div">
+        <button id="btn_log_" onclick="toggle2()">LOGIN</button>
+        <button id="btn_sign" type="submit">SIGN UP</button>
+      </div>
+    </div>
+
+
     </main>
+
+    <script>
+      const div1 = document.getElementById('log_in');
+      const div2 = document.getElementById('sign_up')
+      var display = 0 ;
+
+      function toggle1(){
+        if(display == 1){
+          div1.style.display = 'block';
+          div2.style.display = 'none'
+          
+        }else{
+          div1.style.display = 'none';
+          div2.style.display = 'block';
+        }
+      };
+
+      function toggle2(){
+        if(display == 1){
+          div1.style.display = 'none';
+          div2.style.display = 'block'
+          
+        }else{
+          div1.style.display = 'block';
+          div2.style.display = 'none';
+        }
+      }
+    </script>
+
   </body>
 </html>

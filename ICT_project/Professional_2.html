@@ -41,9 +41,9 @@
         <div class="pro_div">
           <h1>PROFESSIONALS</h1>
         </div>
-      <div class="form_div">
+      <div class="form_div2" id="sign_up">
         <form method="post">
-          <section>
+          <div class="col">
             <label form="fi_na">
               FIRST NAME
               <div form="fi_na" class="bac_div">
@@ -71,9 +71,9 @@
                 <input name="li_nu" type="number" required />
               </div>
             </label>
-          </section>
+          </div>
 
-          <section>
+          <div class="col">
             <label for="ot_na"
               >OTHER NAMES
               <div for="ot_na" class="bac_div">
@@ -95,32 +95,32 @@
               </div>
             </label>
 
-            <aside>
+            <section id="sec">
               <label for="title"
                 >TITLE
-                <div for="title" class="bac_div">
-                  <input name="title" type="text" placeholder="Mr/Mrs" />
+                <div for="title" class="lit_div">
+                  <input name="title" type="text" id="lit_" placeholder="Mr/Mrs" />
                 </div>
               </label>
-              <label for="male"
-                >MALE
-                <div for="male" class="bac_div">
-                  <input name="male" type="checkbox" required />
-                </div>
+              <label for="male" class="lit_div" id="lit_div"
+                ><p>MALE</p>
+                
+                  <input value="male" name="gen" type="radio" id="lit" required />
+               
               </label>
-              <label for="female"
-                >FEMALE
-                <div for="female" class="bac_div">
-                  <input name="female" type="checkbox" required />
-                </div>
+              <label for="female" class="lit_div" id="lit_div"
+                ><p>FEMALE</p>
+                
+                  <input value="female" name="gen" type="radio" id="lit" required />
+                
               </label>
-            </aside>
-          </section>
+            </section>
+          </div>
         </form>
 
-        <div>
-          <button>LOGIN</button>
-          <button type="submit">SIGN UP</button>
+        <div class="btn_div">
+          <button id="btn_log_">LOGIN</button>
+          <button id="btn_sign" type="submit">SIGN UP</button>
         </div>
       </div>
     </main>
