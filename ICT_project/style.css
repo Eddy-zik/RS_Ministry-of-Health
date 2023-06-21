@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <style>
-      /* start of head design */
+   
+   /* start of head design */
+
+
       * {
         margin: 0px;
         padding: 0px;
@@ -128,7 +123,11 @@
         color: white;
         padding: 25px 40px 0px 50px;
       }
+
+
       /* End of head design design */
+
+      /* Start of the prof_1 page design */
 
       .form_div{
         width: 99.8%;
@@ -195,66 +194,4 @@
 
       }
 
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="h_topdiv1">
-        <img src="./image.webp" alt="wash and Sanitize" />
-        <p>Wash and Sanitize your hands Regularly</p>
-      </div>
-      <div class="h_topdiv2">
-        <img src="./svgexport-1.svg" alt="call icon" />
-        <p id="top_p">COVID-19 Enquires</p>
-        <div class="h_topdiv3">
-          <p>08056109538</p>
-          <p>08031888093</p>
-          <p>08033124314</p>
-        </div>
-      </div>
-    </header>
-    <nav class="nav_bar">
-      <figure class="logo">
-        <img src="./logo.webp" alt="Ministry of Health" />
-        <figcaption>RIVERS STATE MINISTRY OF <span>HEALTH</span></figcaption>
-      </figure>
-
-      <ul class="nav_sec">
-        <li id="home">HOME</li>
-        <li id="about_us">ABOUT US</li>
-        <li id="dept">DEPARTMENT</li>
-        <li id="pro">PROJECT</li>
-        <li id="prog">PROGRAMMES</li>
-        <li id="prof">PROFESSIONALS</li>
-      </ul>
-    </nav>
-    <main>
-      <div class="pro_div">
-        <h1>PROFESSIONALS</h1>
-      </div>
-      <div class="form_div">
-        <form method="post">
-          <label for="li_nu"
-            >LICENSE NUMBER
-            <div class="bac_div">
-              <input id="inp" name="li_nu" type="text" required />
-            </div>
-          </label>
-
-          <label for="pass"
-            >PASSWORD
-            <div class="bac_div">
-              <input id="inp" name="pass" type="password" required />
-            </div>
-          </label>
-        </form>
-     
-
-      <div class="btn_div">
-        <button type="submit" id="btn_log">LOGIN</button>
-        <button id="btn_sign">SIGN UP</button>
-      </div>
-     </div>
-    </main>
-  </body>
-</html>
+      /* End of the prof_1 page design */
